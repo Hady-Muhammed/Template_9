@@ -19,7 +19,7 @@ gulp.task("sass", function () {
 // Html Task
 gulp.task("html", function () {
   return gulp
-    .src("pages/*.pug")
+    .src("dev_pages/*.pug")
     .pipe(pug({ pretty: true }))
     .pipe(gulp.dest("dist"));
 });
