@@ -60,6 +60,26 @@ window.onscroll = () => {
   }
 };
 
+menuBtn.onclick = () => {
+  if (menuBtn.innerHTML === "≡") {
+    menuBtn.innerHTML = "X";
+  } else {
+    menuBtn.innerHTML = "≡";
+  }
+  if (megaMenu.style.display === "flex") {
+    megaMenu.style.display = "none";
+  } else {
+    megaMenu.style.display = "flex";
+  }
+};
+
+btn.onclick = () => {
+  scroll({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+
 box1.onclick = () => {
   c1.classList.toggle("hidden");
   if (
@@ -119,24 +139,4 @@ box6.onclick = () => {
     h6.innerHTML = `<i class="fa-solid fa-chevron-up bg-slate-100 p-2 rounded-lg text-blue-700"></i>`;
   else
     h6.innerHTML = `<i class="fa-solid fa-chevron-down bg-slate-100 p-2 rounded-lg text-blue-700"></i>`;
-};
-
-menuBtn.onclick = () => {
-  if (menuBtn.innerHTML === "≡") {
-    menuBtn.innerHTML = "X";
-  } else {
-    menuBtn.innerHTML = "≡";
-  }
-  if (megaMenu.style.display === "flex") {
-    megaMenu.style.display = "none";
-  } else {
-    megaMenu.style.display = "flex";
-  }
-};
-
-btn.onclick = () => {
-  scroll({
-    top: 0,
-    behavior: "smooth",
-  });
 };
