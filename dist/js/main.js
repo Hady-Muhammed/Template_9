@@ -46,11 +46,11 @@ window.onscroll = () => {
   if (scrollY >= 100) {
     header.style.backgroundColor = "rgb(255,255,255,0.95)";
     header.style.color = "black";
-    logo.src = "http://192.168.1.12:5500/src/images/logo.svg";
+    logo.src = "http://192.168.1.12:5500/dist/images/logo.svg";
   } else {
     header.style.backgroundColor = "#1d4ed8";
     header.style.color = "white";
-    logo.src = "http://192.168.1.12:5500/src/images/logo-white.svg";
+    logo.src = "http://192.168.1.12:5500/dist/images/logo-white.svg";
   }
   // Scroll Btn
   if (scrollY >= 100) {
