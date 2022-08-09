@@ -1,0 +1,151 @@
+html(lang="en" class='scroll-smooth')
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        script(src="https://cdn.tailwindcss.com")   
+        script.
+                tailwind.config = {
+                theme: {
+                screens: {
+                xs: '300px',
+                md: '768px',
+                lg: '1024px',
+                xl: '1280px',
+                '2xl': '1536px',
+                },
+                },
+                };
+        link(rel="stylesheet" href="/src/css/all.min.css")
+        include ../includes/mixins.pug
+    body 
+        //- Embedding Header File
+        include ../includes/header.pug
+        //- Start Landing
+        div(class='landing h-screen bg-blue-700 overflow-hidden relative aos opacity-0')
+            div(class='w-fit mx-auto pt-32') 
+                    h1(class='text-white font-bold text-5xl text-center') Open-Source Web Template for <br> SaaS, Startup, Apps, and More
+                    p(class='text-white text-center text-slate-300 mt-6 text-xl') Multidisciplinary Web Template Built with Your Favourite <br> Technology - HTML Bootstrap, Tailwind and React NextJS.
+                    div(class='flex justify-center mt-8')
+                        button(class='inline-block text-black bg-white rounded-xl py-3 px-10 font-semibold mr-5 hover:text-blue-700')  Download Now 
+                        button(class='inline-block text-white p-5 hover:brightness-75 transition') Star On Github →
+                    img(src="/src/images/brand.svg", alt="x" class='block w-1/3 mx-auto mt-8 transition brightness-75 hover:brightness-100')
+                    img(src="/src/images/hero-image.jpg", alt="x" class='w-3/4 rounded-xl absolute -bottom-10 left-1/2 translate-x-[-50%]')
+        //- End Landing
+        //- Start Features
+        div(class='features' id='features')
+            div(class='md:container xs:m-0 xs:text-center md:text-left py-28 px-20')
+                h4(class='text-blue-700 font-semibold text-xl') Features
+                h1(class='text-4xl my-3 font-bold') Main Features Of Play
+                p(class='text-slate-400 text-2xl') There are many variations of passages of Lorem Ipsum available <br>but the majority have suffered alteration in some form.
+                div(class='grid lg:grid-cols-4 md:grid-cols-2 xs:grid-col-1 mt-14 xs:space-y-12 md:space-y-0 aos opacity-0')
+                    .box 
+                        <i class="fa-solid fa-gift bg-blue-700 text-white p-4 text-4xl rounded-xl relative after:absolute after:w-full after:h-full after:rotate-45 after:rounded-xl after:z-[-1] after:left-0 after:top-0 hover:after:rotate-90 after:transition after:bg-blue-700/20"></i>
+                        h3(class='text-xl text-slate-800 font-bold my-5') Free and Open-Source
+                        p(class='text-slate-400') Lorem Ipsum is simply dummy <br> text of the printing and industry.
+                        button(class='mt-8 text-slate-400 hover:text-blue-700') Learn More
+                    .box 
+                        <i class="fa-solid fa-arrows-up-down-left-right bg-blue-700 text-white p-4 text-4xl rounded-xl relative after:absolute after:w-full after:h-full after:rotate-45 after:rounded-xl after:z-[-1] after:left-0 after:top-0 hover:after:rotate-90 after:transition after:bg-blue-700/20"></i>
+                        h3(class='text-xl text-slate-800 font-bold my-5') Multipurpose Template 
+                        p(class='text-slate-400') Lorem Ipsum is simply dummy <br> text of the printing and industry.
+                        button(class='mt-8 text-slate-400 hover:text-blue-700') Learn More
+                    .box 
+                        <i class="fa-solid fa-grip bg-blue-700 text-white p-4 text-4xl rounded-xl relative after:absolute after:w-full after:h-full after:rotate-45 after:rounded-xl after:z-[-1] after:left-0 after:top-0 hover:after:rotate-90 after:transition after:bg-blue-700/20"></i>
+                        h3(class='text-xl text-slate-800 font-bold my-5') High-quality Design
+                        p(class='text-slate-400') Lorem Ipsum is simply dummy <br> text of the printing and industry.
+                        button(class='mt-8 text-slate-400 hover:text-blue-700') Learn More
+                    .box 
+                        <i class="fa-solid fa-layer-group bg-blue-700 text-white p-4 text-4xl rounded-xl relative after:absolute after:w-full after:h-full after:rotate-45 after:rounded-xl after:z-[-1] after:left-0 after:top-0 hover:after:rotate-90 after:transition after:bg-blue-700/20"></i>
+                        h3(class='text-xl text-slate-800 font-bold my-5') All Essential Elements
+                        p(class='text-slate-400') Lorem Ipsum is simply dummy <br> text of the printing and industry.
+                        button(class='mt-8 text-slate-400 hover:text-blue-700') Learn More
+        //- ُُEnd Features
+        //- Embedding About File
+        include ../includes/about.pug
+        //- Embedding Pricing File
+        include ../includes/pricing.pug
+        //- Embedding FAQ File
+        include ../includes/faq.pug
+        //- Start Testimonials
+        div(class='testimonials' id='testimonials')
+            div(class='py-28 px-20 text-center bg-gradient-to-t from-slate-50 to-white')
+                h4(class='text-blue-700 font-semibold text-xl') Testimonials
+                h1(class='text-4xl my-3 font-bold') What our Client Say
+                p(class='text-slate-400 text-2xl') There are many variations of passages of Lorem Ipsum available <br>but the majority have suffered alteration in some form.
+                div(class='flex justify-between md:flex-row xs:flex-col mt-20 aos opacity-0')
+                    div(class='box shadow-md text-left p-5 md:w-[30%] xs:w-full')
+                        ul(class='flex space-x-2') 
+                            li(class='text-yellow-500') <i class="fa-solid fa-star"></i>
+                            li(class='text-yellow-500') <i class="fa-solid fa-star"></i>
+                            li(class='text-yellow-500') <i class="fa-solid fa-star"></i>
+                            li(class='text-yellow-500') <i class="fa-solid fa-star"></i>
+                            li(class='text-yellow-500') <i class="fa-solid fa-star"></i>
+                        p(class='my-5 text-slate-400 font-semibold') "Our members are so impressed. <br> It's intuitive. It's clean. It's <br> distraction free. If you're building <br> a community.
+                        .flex.items-center
+                            img(src="/src/images/author-01.png", alt="")
+                            .container.ml-3 
+                                h5(class='text-sm font-bold') Sabo Masties
+                                p(class='text-zinc-400') Founder @ Rolex
+                    div(class='box shadow-md text-left p-5 md:w-[30%] xs:w-full')
+                        ul(class='flex space-x-2') 
+                            li(class='text-yellow-500') <i class="fa-solid fa-star"></i>
+                            li(class='text-yellow-500') <i class="fa-solid fa-star"></i>
+                            li(class='text-yellow-500') <i class="fa-solid fa-star"></i>
+                            li(class='text-yellow-500') <i class="fa-solid fa-star"></i>
+                            li(class='text-yellow-500') <i class="fa-solid fa-star"></i>
+                        p(class='my-5 text-slate-400 font-semibold') "Our members are so impressed. <br> It's intuitive. It's clean. It's <br> distraction free. If you're building <br> a community.
+                        .flex.items-center 
+                            img(src="/src/images/author-02.png", alt="")
+                            .container.ml-3 
+                                h5(class='text-sm font-bold') Margin Gesmu
+                                p(class='text-zinc-400') Founder @ UI Hunter
+                    div(class='box shadow-md text-left p-5 md:w-[30%] xs:w-full')
+                        ul(class='flex space-x-2') 
+                            li(class='text-yellow-500') <i class="fa-solid fa-star"></i>
+                            li(class='text-yellow-500') <i class="fa-solid fa-star"></i>
+                            li(class='text-yellow-500') <i class="fa-solid fa-star"></i>
+                            li(class='text-yellow-500') <i class="fa-solid fa-star"></i>
+                            li(class='text-yellow-500') <i class="fa-solid fa-star"></i>
+                        p(class='my-5 text-slate-400 font-semibold') "Our members are so impressed. <br> It's intuitive. It's clean. It's <br> distraction free. If you're building <br> a community.
+                        .flex.items-center
+                            img(src="/src/images/author-03.png", alt="")
+                            .container.ml-3 
+                                h5(class='text-sm font-bold') William Smith
+                                p(class='text-zinc-400') Founder @ Trorex
+                h6(class='w-fit text-left mt-20 text-slate-400 font-semibold text-sm relative after:absolute after:w-[30px] after:h-[1px] after:top-1/2 after:translate-y-[-50%] after:-right-[35%] after:bg-black aos') Some Of Our Clients 
+                div(class='flex space-x-8 bg-black/20 w-fit p-3 mt-5 aos opacity-0 md:flex-row xs:flex-col md:space-y-0 xs:space-y-4')
+                    img(class='w-32' src="/src/images/tailgrids.svg", alt="")
+                    img(class='w-32' src="/src/images/ayroui.svg", alt="")
+                    img(class='w-32' src="/src/images/uideck.svg", alt="")
+                    img(src="/src/images/graygrids.svg", alt="")
+                    img(src="/src/images/lineicons.svg", alt="")
+        //- End Testimonials
+        //- Embedding Team File
+        include ../includes/team.pug
+        //- Embedding Contact File
+        include ../includes/contact.pug
+        //- Embedding Footer File
+        include ../includes/footer.pug
+         //- Embedding Scroll Btn
+        +scrollToTop
+          //- Animate On Scroll
+        script(src="/dist/js/main.js") 
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

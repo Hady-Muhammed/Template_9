@@ -1,0 +1,32 @@
+html(lang="en" class='scroll-smooth')
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        script(src="https://cdn.tailwindcss.com")   
+        script.
+                tailwind.config = {
+                theme: {
+                screens: {
+                xs: '300px',
+                md: '768px',
+                lg: '1024px',
+                xl: '1280px',
+                '2xl': '1536px',
+                },
+                },
+                };
+        link(rel="stylesheet" href="/src/css/all.min.css")
+        include ../includes/mixins.pug
+    body 
+        //- Embedding Header File
+        include ../includes/header.pug
+        +mini-landing('Contact Page')
+        //- Embedding Contact File
+        include ../includes/contact.pug
+        //- Embedding Footer File
+        include ../includes/footer.pug
+         //- Embedding Scroll Btn
+        +scrollToTop
+        script(src="/dist/js/main.js") 
+        

@@ -1,0 +1,39 @@
+html(lang="en" class='scroll-smooth')
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        script(src="https://cdn.tailwindcss.com")   
+        script.
+                tailwind.config = {
+                theme: {
+                screens: {
+                xs: '300px',
+                md: '768px',
+                lg: '1024px',
+                xl: '1280px',
+                '2xl': '1536px',
+                },
+                },
+                };
+        link(rel="stylesheet" href="/src/css/all.min.css")
+        include ../includes/mixins.pug
+    body 
+        //- Embedding Header File
+        include ../includes/header.pug
+        +mini-landing('404 Page')
+        //- Start 404
+        div(class='p-52  opacity-0 aos')
+            div(class='text-center shadow-md p-24')
+                h1(class='text-[2.50rem] font-bold') 404 - We couldn't find that page. 
+                p(class='text-xl font-medium my-5 text-slate-700') Maybe you can find what you need here?
+                div(class='buttons space-x-4 mt-10') 
+                    button(class='inline-block p-3 bg-slate-100 rounded-md hover:text-white hover:bg-blue-700 font-bold px-5') Home
+                    button(class='inline-block p-3 bg-slate-100 rounded-md hover:text-white hover:bg-blue-700 font-bold px-5') Support
+                    button(class='inline-block p-3 bg-slate-100 rounded-md hover:text-white hover:bg-blue-700 font-bold px-5') Latest News  
+        //- End 404
+        //- Embedding Footer File
+        include ../includes/footer.pug
+        //- Embedding Scroll Btn
+        +scrollToTop
+        script(src="/dist/js/main.js") 

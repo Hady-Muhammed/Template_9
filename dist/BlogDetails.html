@@ -1,0 +1,175 @@
+
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://cdn.tailwindcss.com">  </script>
+    <script>
+      tailwind.config = {
+      theme: {
+      screens: {
+      xs: '300px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1536px',
+      },
+      },
+      };
+    </script>
+    <link rel="stylesheet" href="/src/css/all.min.css"/>
+  </head>
+  <body> 
+    <header class="flex md:flex-row xs:flex-col  bg-blue-700 text-white justify-around p-2 pt-5 sticky top-0 z-50 shadow-sm" id="header"> 
+      <div class="logo xs:w-fit md:mx-0 xs:mx-auto md:my-0 xs:my-5"><a href="index.html"> <img src="/src/images/logo-white.svg" alt="x" id="logo"/></a></div>
+      <nav class="list-none flex lg:space-x-8 items-center space-x-2 xs:hidden lg:flex"><a class="block p-2 hover:text-slate-400 h-fit" href="index.html">Home</a><a class="block p-2 hover:text-slate-400 h-fit" href="#about">About</a><a class="block p-2 hover:text-slate-400 h-fit" href="#pricing">Pricing</a><a class="block p-2 hover:text-slate-400 h-fit" href="#team">Team </a><a class="block p-2 hover:text-slate-400 h-fit" href="#contact">Contact </a>
+        <li class="block p-2 hover:text-slate-400 h-fit relative overflow-hidden hover:overflow-visible">Pages <i class="fa-solid fa-chevron-down ml-1"></i>
+          <nav class="hover:translate-y-5 absolute flex-col w-[350%] bg-white p-5 space-y-5 top-[100%] right-[-135%] rounded-sm transition duration-500"> <a class="block w-fit whitespace-nowrap pl-5 hover:text-indigo-500" href="AboutPage.html">About Page</a><a class="block w-fit whitespace-nowrap pl-5 hover:text-indigo-500" href="PricingPage.html">Pricing Page</a><a class="block w-fit whitespace-nowrap pl-5 hover:text-indigo-500" href="ContactPage.html">Contact Page</a><a class="block w-fit whitespace-nowrap pl-5 hover:text-indigo-500" href="BlogGrid.html">Blog Grid Page</a><a class="block w-fit whitespace-nowrap pl-5 hover:text-indigo-500" href="BlogDetails.html">Blog Details Page</a><a class="block w-fit whitespace-nowrap pl-5 hover:text-indigo-500" href="SignUpPage.html">Sign Up Page</a><a class="block w-fit whitespace-nowrap pl-5 hover:text-indigo-500" href="SignInPage.html">Sign In Page</a><a class="block w-fit whitespace-nowrap pl-5 hover:text-indigo-500" href="404Page.html">404 Page</a></nav>
+        </li>
+      </nav>
+      <div class="flex justify-between"> <a class="flex justify-center items-center px-8 md:py-0 xs:py-5 hover:text-slate-400 font-bold md:w-fit xs:w-1/2" href="SignInPage.html">Sign In </a><a class="flex justify-center items-center px-8 md:py-0 xs:py-5 rounded-lg bg-blue-500/70 transition duration-250 hover:text-black hover:bg-white font-bold md:w-fit xs:w-1/2" href="SignUpPage.html">Sign Up</a></div>
+      <div class="menu-bars text-6xl pb-3 sm:block lg:hidden" id="menu">≡</div>
+      <nav class="list-none hidden absolute right-0 top-[100%] md:w-1/3 xs:w-full text-black bg-white rounded-md flex-col shadow-lg" id="megaMenu"><a class="block p-2 hover:text-slate-400 h-fit p-3 pl-8" href="index.html">Home</a><a class="block p-2 hover:text-slate-400 h-fit p-3 pl-8" href="#about">About</a><a class="block p-2 hover:text-slate-400 h-fit p-3 pl-8" href="#pricing">Pricing</a><a class="block p-2 hover:text-slate-400 h-fit p-3 pl-8" href="#team">Team </a><a class="block p-2 hover:text-slate-400 h-fit p-3 pl-8" href="#contact">Contact </a><a class="block p-2 hover:text-slate-400 h-fit relative overflow-hidden hover:overflow-visible p-3 pl-8" href="">
+          Pages <i class="fa-solid fa-chevron-down ml-1"></i>
+          <nav class="absolute flex-col w-[235%] bg-white p-5 px-0 space-y-5 top-[100%] right-[-135%] rounded-md shadow-lg"> <a class="block w-fit whitespace-nowrap hover:text-indigo-500 p-1 text-sm pl-8" href="AboutPage.html">About Page</a><a class="block w-fit whitespace-nowrap hover:text-indigo-500 p-1 text-sm pl-8" href="PricingPage.html">Pricing Page</a><a class="block w-fit whitespace-nowrap hover:text-indigo-500 p-1 text-sm pl-8" href="ContactPage.html">Contact Page</a><a class="block w-fit whitespace-nowrap hover:text-indigo-500 p-1 text-sm pl-8" href="BlogGrid.html">Blog Grid Page</a><a class="block w-fit whitespace-nowrap hover:text-indigo-500 p-1 text-sm pl-8" href="BlogDetails.html">Blog Details Page</a><a class="block w-fit whitespace-nowrap hover:text-indigo-500 p-1 text-sm pl-8" href="SignUpPage.html">Sign Up Page</a><a class="block w-fit whitespace-nowrap hover:text-indigo-500 p-1 text-sm pl-8" href="SignInPage.html">Sign In Page</a><a class="block w-fit whitespace-nowrap hover:text-indigo-500 p-1 text-sm pl-8" href="404Page.html">404 Page  </a></nav></a></nav>
+    </header>
+        <div class="mini-landing bg-gradient-to-r from-blue-700 to-blue-500 grid place-items-center h-1/4">
+          <h1 class="text-4xl font-semibold text-white">Blog Details</h1>
+        </div>
+    <div class="grid place-items-center h-1/2 mt-52 opacity-0 aos">
+      <div class="relative brightness-75 flex items-end w-[92%] h-[100%] bg-center" style="background-image:url(/src/images/blog-details-01.jpg)">
+        <div class="absolute z-10 flex w-full h-fit items-center space-x-20 text-white bg-gradient-to-t from-blue-500 to-transparent">
+          <div class="name"> <img class="inline-block" src="/src/images/author-01 (1).png" alt="x"/>
+            <p class="inline-block">By Samuel Joshi</p>
+          </div>
+          <div class="date">
+             <i class="fa-solid fa-calendar-days"></i>
+            <p class="inline-block">26 Feb 2023</p>
+          </div>
+          <div class="comments">
+             <i class="fa-solid fa-message"></i>
+            <p class="inline-block">05</p>
+          </div>
+          <div class="views">
+             <i class="fa-solid fa-eye"></i>
+            <p class="inline-block">05</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex py-52 px-12 justify-between pb-0 pt-14">
+      <div class="box space-y-8 w-[65%] opacity-0 aos">
+        <h1 class="text-4xl font-bold">Facing a challenge is kind of a turn-on for an easy rider</h1>
+        <p class="font-medium text-slate-400 opacity-0 aos">There's a time and place for everything… including asking for reviews. For instance: you should not asking for a review on your checkout page. The sole purpose of this page is to guide your customer to complete their purchase, and this means that the page should be as minimalist and pared-down possible. You don't want to have any unnecessary elements or Call To Actions.</p>
+        <p class="font-medium text-slate-400 opacity-0 aos">There's a time and place for everything… including asking for reviews. For instance: you should not asking for a review on your checkout page. The sole purpose of this page is to guide your customer to complete their purchase, and this means that the page should be as minimalist and pared-down possible. You don't want to have any unnecessary elements or Call To Actions.</p>
+        <h2 class="font-bold text-2xl  opacity-0 aos">Sea no quidam vulputate</h2>
+        <p class="font-medium text-slate-400">At quo cetero fastidii. Usu ex ornatus corpora sententiae, vocibus deleniti ut nec. Ut enim eripuit eligendi est, in iracundia signiferumque quo. Sed virtute suavitate suscipiantur ea, dolor this can eloquentiam ei pro. Suas adversarium interpretaris eu sit, eum viris impedit ne. Erant appareat corrumpit ei vel.</p>
+        <div class="text-center bg-slate-100 p-7 grid place-items-center relative overflow-hidden h-1/4 rounded-sm"><i class="text-6xl text-blue-700 fa-solid fa-quote-left"></i>
+          <p class="italic font-medium">A spring of truth shall flow from it: like a new star it shall scatter the <br> darkness of ignorance, and cause a light heretofore unknown to <br> shine amongst men.</p><span class="block text-slate-400">“Andrio Domeco”</span><img class="rotate-[180deg] absolute -top-5 -left-40 z-0" src="/src/images/shape-3.svg" alt=""/>
+        </div>
+        <h2 class="font-bold text-2xl  opacity-0 aos">What is it with your ideas?</h2>
+        <p class="font-medium text-slate-400">At quo cetero fastidii. Usu ex ornatus corpora sententiae, vocibus deleniti ut nec. Ut enim eripuit eligendi est, in iracundia signiferumque quo. Sed virtute suavitate suscipiantur ea, dolor this can eloquentiam ei pro. Suas adversarium interpretaris eu sit, eum viris impedit ne. Erant appareat corrumpit ei vel.</p>
+        <p class="font-medium text-slate-400">At quo cetero fastidii. Usu ex ornatus corpora sententiae, vocibus deleniti ut nec. Ut enim eripuit eligendi est, in iracundia signiferumque quo. Sed virtute suavitate suscipiantur ea, dolor this can eloquentiam ei pro. Suas adversarium interpretaris eu sit, eum viris impedit ne. Erant appareat corrumpit ei vel.</p>
+        <div class="flex justify-between">
+          <div class="buttons space-x-4"> 
+            <button class="text-blue-700 font-medium bg-slate-100 p-2 px-4 text-sm">Design </button>
+            <button class="text-blue-700 font-medium bg-slate-100 p-2 px-4 text-sm">Development</button>
+            <button class="text-blue-700 font-medium bg-slate-100 p-2 px-4 text-sm">Info</button>
+          </div>
+          <div class="media space-x-4 opacity-0 aos"><span class="inline-block text-slate-500">Share This Post</span><span class="inline-block text-white bg-blue-700 p-3 rounded-full"><i class="fa-brands fa-facebook-f"></i></span><span class="inline-block text-white bg-blue-400 p-3 rounded-full"><i class="fa-brands fa-twitter"></i></span><span class="inline-block text-white bg-blue-300 p-3 rounded-full"><i class="fa-brands fa-linkedin-in"></i></span></div>
+        </div>
+      </div>
+      <div class="box w-[30%] opacity-0 aos">
+        <div class="bg-blue-700 text-white p-12 text-center space-y-5 rounded-md">
+          <h2 class="font-medium text-2xl whitespace-nowrap">Join our newsletter!</h2>
+          <p class="whitespace-nowrap">Enter your email to receive our latest <br> newsletter.</p>
+          <input class="rounded-md w-full bg-blue-600 p-4 placeholder:text-center placeholder:font-semibold placeholder:text-white outline-none text-center" type="email" placeholder="Your email address"/>
+          <button class="rounded-md w-full bg-green-400 hover:bg-green-600 transition px-10 py-4 font-semibold">Subscribe Now </button>
+          <p class="font-bold">Don't worry, we don't spam</p>
+        </div>
+        <div class="py-24 pb-0 px-12 xs:text-center md:text-left relative">
+          <h1 class="absolute top-[25%] left-[4%] font-semibold text-3xl before:absolute before:w-1/2 before:h-[2px] before:bg-blue-700 before:top-[125%]">Popular Articles</h1>
+        </div>
+        <div class="articles divide-y  opacity-0 aos">
+          <div class="p-4 flex items-center space-x-2"><img src="/src/images/article-author-01.png" alt=""/>
+            <div>
+              <p class="font-semibold text-xl hover:text-blue-700 cursor-pointer">Create engaging online courses your student…</p>
+              <h2 class="text-slate-400 text-sm">Glomiya Lucy</h2>
+            </div>
+          </div>
+          <div class="p-4 flex items-center space-x-2"><img src="/src/images/article-author-02.png" alt=""/>
+            <div>
+              <p class="font-semibold text-xl hover:text-blue-700 cursor-pointer">The ultimate formula for launching online course</p>
+              <h2 class="text-slate-400 text-sm">Andrio jeson</h2>
+            </div>
+          </div>
+          <div class="p-4 flex items-center space-x-2"><img src="/src/images/article-author-03.png" alt=""/>
+            <div>
+              <p class="font-semibold text-xl hover:text-blue-700 cursor-pointer">50 Best web design tips & tricks that will help you</p>
+              <h2 class="text-slate-400 text-sm">Samoyel Dayno</h2>
+            </div>
+          </div>
+          <div class="p-4 flex items-center space-x-2"><img src="/src/images/article-author-04.png" alt=""/>
+            <div>
+              <p class="font-semibold text-xl hover:text-blue-700 cursor-pointer">The 8 best landing page builders, reviewed </p>
+              <h2 class="text-slate-400 text-sm">Andrio Glori</h2>
+            </div>
+          </div>
+        </div><img class="mt-10 w-full rounded-md opacity-0 aos" src="/src/images/banner-ad.png" alt=""/>
+      </div>
+    </div>
+    <div class="grid gap-10 lg:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 py-52 px-12 xs:text-center md:text-left relative  opacity-0 aos">
+      <h1 class="absolute top-[15%] left-[4%] font-semibold text-3xl before:absolute before:w-1/2 before:h-[2px] before:bg-blue-700 before:top-[125%]">Related Articles</h1>
+      <div class="box"><a class="h-fit block overflow-hidden" href=""> <img class="md:mb-10 rounded-md transition duration-250 hover:scale-110 xs:m-[2em_auto]" src="/src/images/blog-01.jpg" alt="x"/></a><span class="text-white bg-blue-700 p-2 px-4 rounded-md font-bold text-sm">Dec 22, 2023 </span><a class="block cursor-pointer hover:text-blue-700 font-bold text-2xl my-5">Meet AutoManage, the best AI management tools</a>
+        <p class="text-slate-400">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div>
+      <div class="box"><a class="h-fit block overflow-hidden" href=""> <img class="md:mb-10 rounded-md transition duration-250 hover:scale-110 xs:m-[2em_auto]" src="/src/images/blog-02.jpg" alt="x"/></a><span class="text-white bg-blue-700 p-2 px-4 rounded-md font-bold text-sm">Mar 15, 2023 </span><a class="block cursor-pointer hover:text-blue-700 font-bold text-2xl my-5">How to earn more money as a wellness coach</a>
+        <p class="text-slate-400">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div>
+      <div class="box"><a class="h-fit block overflow-hidden" href=""> <img class="md:mb-10 rounded-md transition duration-250 hover:scale-110 xs:m-[2em_auto]" src="/src/images/blog-03.jpg" alt="x"/></a><span class="text-white bg-blue-700 p-2 px-4 rounded-md font-bold text-sm">Jan 05, 2023 </span><a class="block cursor-pointer hover:text-blue-700 font-bold text-2xl my-5">The no-fuss guide to upselling and cross selling</a>
+        <p class="text-slate-400">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div>
+    </div>
+    <html lang="en">
+      <div class="bg-slate-900 ">
+        <footer class="bg-slate-900 relative overflow-hidden aos opacity-0">
+          <div class="grid gap-5 lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2  text-white p-20 pb-10 relative z-10">
+            <div><img class="mb-8" src="/src/images/logo-white.svg" alt="logo"/>
+              <p class="text-slate-300">We create digital experiences for brands and companies by using technology.</p>
+              <ul class="flex space-x-6 mt-8"> 
+                <li><i class="fa-brands fa-facebook-f hover:text-slate-300"></i></li>
+                <li><i class="fa-brands fa-twitter hover:text-slate-300"></i></li>
+                <li><i class="fa-brands fa-instagram hover:text-slate-300"></i></li>
+                <li><i class="fa-brands fa-linkedin hover:text-slate-300"></i></li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="text-xl font-bold mb-10 p-2">About Us</h2>
+              <ul class="flex flex-col p-2 space-y-4"><a class="text-slate-300 font-semibold hover:text-blue-600" href="">Home </a><a class="text-slate-300 font-semibold hover:text-blue-600" href="">Features</a><a class="text-slate-300 font-semibold hover:text-blue-600" href="">About</a><a class="text-slate-300 font-semibold hover:text-blue-600" href="">Testimonial</a></ul>
+            </div>
+            <div>
+              <h2 class="text-xl font-bold mb-10 p-2">Features</h2>
+              <ul class="flex flex-col p-2 space-y-4"><a class="text-slate-300 font-semibold hover:text-blue-600" href="">How it works </a><a class="text-slate-300 font-semibold hover:text-blue-600" href="">Privacy policy</a><a class="text-slate-300 font-semibold hover:text-blue-600" href="">Terms of Service</a><a class="text-slate-300 font-semibold hover:text-blue-600" href="">Refund policy</a></ul>
+            </div>
+            <div>
+              <h2 class="text-xl font-bold mb-10 p-2" p-2="p-2">Our Products</h2>
+              <ul class="flex flex-col p-2 space-y-4"> <a class="text-slate-300 font-semibold hover:text-blue-600" href="">Linelcons </a><a class="text-slate-300 font-semibold hover:text-blue-600" href="">Ecommerce HTML</a><a class="text-slate-300 font-semibold hover:text-blue-600" href="">Ayro UI</a><a class="text-slate-300 font-semibold hover:text-blue-600" href="">PlainAdmin</a></ul>
+            </div>
+            <div>
+              <h2 class="text-xl font-bold mb-10 p-2">Partners</h2>
+              <ul class="flex flex-col space-y-5"><a href=""><img src="/src/images/tailgrids.svg" alt="brand"/></a><a href=""><img src="/src/images/ayroui.svg" alt="brand"/></a><a href=""><img src="/src/images/ecommerce-html.svg" alt="brand"/></a><a href=""><img src="/src/images/graygrids.svg" alt="brand"/></a><a href=""><img src="/src/images/lineicons.svg" alt="brand"/></a><a href=""><img src="/src/images/uideck.svg" alt="brand"/></a></ul>
+            </div>
+          </div>
+          <hr class="w-full h-2"/>
+          <div class="flex justify-between text-white px-20 py-8 xs:flex-col md:flex-row">
+            <ul class="flex space-x-5 xs:mb-5 xs:justify-between"><a class="text-slate-300 font-semibold hover:text-blue-600" href="">Privacy policy </a><a class="text-slate-300 font-semibold hover:text-blue-600" href="">Legal notice</a><a class="text-slate-300 font-semibold hover:text-blue-600" href="">Terms of service</a></ul>
+            <p class="xs:text-center text-slate-300 font-semibold">Designed and Developed by<span class="text-blue-600">  TailGrids and UIdeck</span></p>
+          </div><img class="absolute -top-5 z-0" src="/src/images/shape-1.svg" alt=""/><img class="absolute bottom-0 right-0" src="/src/images/shape-3.svg" alt=""/>
+        </footer>
+      </div>
+    </html>
+        <button class="fixed hidden text-white bg-blue-700 p-4 rounded-md right-10 bottom-10 z-10" id="btn"><i class="fa-solid fa-angle-up"></i></button>
+    <script src="/dist/js/main.js"> </script>
+  </body>
+</html>

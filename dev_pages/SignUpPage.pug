@@ -1,0 +1,50 @@
+html(lang="en" class='scroll-smooth')
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        script(src="https://cdn.tailwindcss.com")   
+        script.
+                tailwind.config = {
+                theme: {
+                screens: {
+                xs: '300px',
+                md: '768px',
+                lg: '1024px',
+                xl: '1280px',
+                '2xl': '1536px',
+                },
+                },
+                };
+        link(rel="stylesheet" href="/src/css/all.min.css")
+        include ../includes/mixins.pug
+    body 
+        //- Embedding Header File
+        include ../includes/header.pug
+        +mini-landing('Sign Up')
+        //- Start Signin
+        div(class='p-52 pt-14 bg-slate-100')
+            div(class='text-center bg-white shadow-md w-[60%] mx-auto p-10 opacity-0 aos')
+                img(src="/src/images/logo.svg", alt="x" class='w-fit mx-auto')
+                form(action="" class='mt-10')
+                    input(class='bg-slate-50 outline-0 border-2 border-gray-200 rounded-md p-3 block w-full mx-auto placeholder:pl-2' type="text" placeholder='Name' required) 
+                    input(class='bg-slate-50 outline-0 border-2 border-gray-200 rounded-md p-3 block w-full mx-auto placeholder:pl-2 mt-5' type="email" placeholder='Email' required) 
+                    input(class='bg-slate-50 outline-0 border-2 border-gray-200 rounded-md p-3 block w-full mx-auto placeholder:pl-2 mt-5' type="password" placeholder='Password' required) 
+                    button(class='bg-blue-700 text-white px-10 py-3 w-full rounded-md mt-5') Sign In
+                span(class='block text-gray-400 my-5') Connect With
+                div(class='buttons space-x-6')
+                    button(class='px-[3em] py-3 rounded-lg bg-blue-800 text-white') <i class="fa-brands fa-facebook-f"></i>
+                    button(class='px-[3em] py-3 rounded-lg bg-blue-300 text-white') <i class="fa-brands fa-twitter"></i>
+                    button(class='px-[3em] py-3 rounded-lg bg-red-800 text-white') <i class="fa-solid fa-g"></i>
+                span(class='block text-gray-400 my-5 mt-16') By creating an account you are agree with our <br>
+                    a(class='text-blue-700 hover:underline' href="") Privacy 
+                    | and 
+                    a(class='text-blue-700 hover:underline' href="") Policy 
+                p(class='text-gray-400') Already have an account?
+                    a(href='SignInPage.html' class='text-blue-700 block hover:underline cursor-pointer') Sign In
+        //- End Signin
+        //- Embedding Footer File
+        include ../includes/footer.pug
+         //- Embedding Scroll Btn
+        +scrollToTop
+        script(src="/dist/js/main.js") 
