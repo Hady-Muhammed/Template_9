@@ -22,7 +22,9 @@ let megaMenu = document.getElementById("megaMenu");
 let logo = document.getElementById("logo");
 let header = document.getElementById("header");
 let btn = document.getElementById("btn");
-
+window.onload = () => {
+  scrollY = 5;
+}
 window.onscroll = () => {
   // AOS
   const triggerBottom = (window.innerHeight / 5) * 4;
