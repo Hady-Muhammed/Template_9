@@ -23,7 +23,7 @@ let logo = document.getElementById("logo");
 let header = document.getElementById("header");
 let btn = document.getElementById("btn");
 window.onload = () => {
-  scrollY = 5;
+  scroll(0,15);
 }
 window.onscroll = () => {
   // AOS
