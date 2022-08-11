@@ -21,7 +21,7 @@ gulp.task("html", function () {
   return gulp
     .src("dev_pages/*.pug")
     .pipe(pug({ pretty: true }))
-    .pipe(gulp.dest("dist"));
+    .pipe(gulp.dest("docs"));
 });
 
 // Js Task
